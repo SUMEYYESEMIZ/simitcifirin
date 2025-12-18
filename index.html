@@ -1,1 +1,121 @@
+<!doctype html>
+<html lang="tr">
+<head>
+
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simitçi Fırın | Pasta & Cafe</title>
+  <!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="public/assets/logo.png" />
+  <meta name="google-site-verification" content="ChSF7U2gQR6OgHF2rG1V8EyfUYp2z29Mlm7z7z6HwFg">
+  <!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>HEMEN ARA: <a href="tel:+905438919499">+90 543 891 94 99</a></span>
+      <span>Gebze / Kocaeli</span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="container header">
+    <!-- HAMBURGER (solda) -->
+   <button id="menuToggle" class="hamburger" aria-expanded="false" aria-controls="chipDrawer" aria-label="Kategorileri aç/kapat">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</button>
+
+
+    <!-- Marka -->
+    <div class="brand">
+      <img src="public/assets/logo.png" alt="Simitçi Fırın" class="logo">
+      <div class="brand-text">
+        <h1>Simitçi Fırın</h1>
+        <small>Pasta & Cafe • 1975</small>
+      </div>
+    </div>
+
+    <!-- Üst menü (masaüstü) -->
+    <nav class="nav">
+      <a href="/">Ana Sayfa</a>
+      <a href="#/menu">Menü</a>
+      <a href="#/contact">İletişim</a>
+      <a class="btn small" href="https://wa.me/905438919499" target="_blank">WhatsApp</a>
+    </nav>
+  </header>
+
+  <!-- HEADER’dan sonra: mobil çekmece -->
+  <nav id="chipDrawer" class="chip-drawer" role="navigation" aria-label="Kategoriler">
+    <div class="chip-list"></div>
+  </nav>
+
+  <!-- KATEGORİ BUTONLARI (masaüstü için yatay chipbar) -->
+  <nav class="chipbar">
+    <button class="chip active" data-cat="all">TÜMÜ</button>
+    <button class="chip" data-cat="kahvalti">KAHVALTI</button>
+    <button class="chip" data-cat="sicaklar">SICAKLAR</button>
+    <button class="chip" data-cat="fit-kahvaltilar">FİT KAHVALTILAR</button>
+    <button class="chip" data-cat="tost-cesitleri">TOST ÇEŞİTLERİ</button>
+    <button class="chip" data-cat="soguk-sandvicler">SOĞUK SANDVİÇLER</button>
+    <button class="chip" data-cat="simit-cesitleri">SİMİT ÇEŞİTLERİ</button>
+    <button class="chip" data-cat="borek-cesitleri">BÖREK ÇEŞİTLERİ</button>
+    <button class="chip" data-cat="pogaca-cesitleri">POĞAÇA ÇEŞİTLERİ</button>
+    <button class="chip" data-cat="acma-cesitleri">AÇMA ÇEŞİTLERİ</button>
+    <button class="chip" data-cat="firindan-lezzetler">FIRINDAN LEZZETLER</button>
+    <button class="chip" data-cat="kurabiye">KURABİYE</button>
+    <button class="chip" data-cat="sutlu-tatlilar">SÜTLÜ TATLILAR</button>
+    <button class="chip" data-cat="tek-kisilik-pastalar">TEK KİŞİLİK PASTALAR</button>
+    <button class="chip" data-cat="pastalar">PASTALAR</button>
+    <button class="chip" data-cat="serbetli-tatlilar">ŞERBETLİ TATLILAR</button>
+    <button class="chip" data-cat="kahve">KAHVE</button>
+    <button class="chip" data-cat="sicak-icecekler">SICAK İÇECEKLER</button>
+    <button class="chip" data-cat="soguk-icecekler">SOĞUK İÇECEKLER</button>
+  </nav>
+
+  <!-- ÜRÜN KARTLARI (dinamik) -->
+  <section id="product-grid" class="grid"></section>
+
+  <!-- APP ana alanı -->
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    <p>© 1975–<span id="year"></span> Simitçi Fırın • Pasta & Cafe</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+  function kontrol() {
+    const domain = document.getElementById("domain").value;
+    const regex = /^[a-z0-9.-]+$/;
+
+    if (regex.test(domain)) {
+      alert("✅ Geçerli domain");
+    } else {
+      alert("❌ Türkçe karakter veya geçersiz karakter var");
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
 
